@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloak:8080/realms/reports-realm
+          jwk-set-uri: http://keycloak:8080/realms/reports-realm/protocol/openid-connect/certs
+
+server:
+  port: 8082
